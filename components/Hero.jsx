@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="bg-[url('/bgimage2.jpg')] w-full h-screen bg-fixed overflow-hidden relative">
         <div className="bg-slate-800/60  h-screen flex justify-start ">
-          <div className="max-w-7xl p-2 md:max-w-5xl opacity-100 mx-auto flex flex-col justify-start mt-8 items-center  relative">
+          <div className="max-w-7xl p-2 md:max-w-5xl opacity-100 mx-auto flex flex-col justify-start sm:mt-32 mt-8 items-center  relative">
             <h1 className="text-4xl sm:text-5xl font-semibold sm:font-bold text-white">
               We make your overseas dream into reality.
             </h1>
