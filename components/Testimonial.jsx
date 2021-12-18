@@ -59,7 +59,7 @@ const Textimonial = () => {
   ];
   return (
     <div className="max-w-7xl  mx-auto py-14 ">
-      <div role="contentinfo" className="flex items-center flex-col px-5 mt-12">
+      <div className="flex items-center flex-col px-5 mt-12">
         <h1 className="focus:outline-none text-xl md:text-3xl lg:text-4xl font-semibold text-left md:font-extrabold  leading-relaxed text-gray-800 capitalize pt-4">
           Here it From our family!
         </h1>
@@ -71,10 +71,13 @@ const Textimonial = () => {
         </p>
       </div>
       <div className="overflow-x-auto snap-x  scrollbar-hide gap-3 flex p-5 mt-8">
-        {testimonials.map((test) => (
-          <div className="snap-center max-w-xl  mx-auto rounded-lg bg-white dark:bg-gray-800 shadow shadow-indigo-500 px-5 pt-5 pb-10 text-gray-800 dark:text-gray-50">
-            <div class="w-72 text-center  -mt-12 bg-white rounded-full border-2 border-indigo-500 mx-auto">
-              <span class="block relative">
+        {testimonials.map((test, index) => (
+          <div
+            key={index}
+            className="snap-center max-w-xl  mx-auto rounded-lg bg-white dark:bg-gray-800 shadow shadow-indigo-500 px-5 pt-5 pb-10 text-gray-800 dark:text-gray-50"
+          >
+            <div className="w-72 text-center  -mt-12 bg-white rounded-full border-2 border-indigo-500 mx-auto">
+              <span className="block relative">
                 <img
                   alt="profile"
                   src="/dp.svg"

@@ -17,8 +17,9 @@ const Cta = () => {
         Countries Of Your Dream
       </p>
       <div className="overflow-x-auto snap-x  scrollbar-hide gap-3 flex p-5">
-        {countries.map((country) => (
+        {countries.map((country, index) => (
           <img
+            key={index}
             src={`${country.svglink}`}
             alt={`${country.name}`}
             className="snap-center w-72 rounded-lg"
