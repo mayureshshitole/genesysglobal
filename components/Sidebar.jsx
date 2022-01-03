@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-import { Link as sLink } from "react-scroll";
 import { TiSocialLinkedin } from "react-icons/ti";
+import Link from "next/link";
 
 const SidebarContainer = styled.div`
   position: fixed;
@@ -12,7 +12,7 @@ const SidebarContainer = styled.div`
   background: #0d0d0d;
   display: grid;
   align-items: center;
-  
+
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
@@ -37,7 +37,7 @@ const SidebarWrapper = styled.div`
   color: #fff;
 `;
 
-const SidebarLinks = styled(sLink)`
+const SidebarLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,15 +97,21 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icons>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinks onClick={toggle} to="about">
-            About
-          </SidebarLinks>
-          <SidebarLinks onClick={toggle} to="services">
-            Services
-          </SidebarLinks>
-          <SidebarLinks onClick={toggle} to="contact">
-            Contact
-          </SidebarLinks>
+          <Link href="/#about">
+            <SidebarLinks onClick={toggle} to="about">
+              About
+            </SidebarLinks>
+          </Link>
+          <Link href="/#services">
+            <SidebarLinks onClick={toggle} to="services">
+              Services
+            </SidebarLinks>
+          </Link>
+          <Link href="/#contactus">
+            <SidebarLinks onClick={toggle} to="contact">
+              Contact
+            </SidebarLinks>
+          </Link>
         </SidebarMenu>
         <SocialIcons onClick={toggle}>
           <ClickIcons>

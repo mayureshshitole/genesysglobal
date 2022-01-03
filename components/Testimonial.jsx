@@ -1,69 +1,14 @@
 import React from "react";
+import data from "../data";
 
 const Textimonial = () => {
-  const testimonials = [
-    {
-      country: "Canada",
-      name: "Tushar Bhat",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "United States",
-      name: "Deven Pavar",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "Australia",
-      name: "Harish Sharma",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "England",
-      name: "Mayuresh Shitole",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "Germany",
-      name: "Veena Mehta",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "Ireland",
-      name: "Joginder Sahu",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "New Zealand",
-      name: "Vishal Patil",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "Canada",
-      name: "Manpreet Singh",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-    {
-      country: "United States",
-      name: "Vishal Patil",
-      quote:
-        "Genesys Global helped me to fulfill my study dreams. Canada was my dream destination and today even after 5 years Sir is still in contact with me.",
-    },
-  ];
   return (
     <div className="max-w-7xl  mx-auto py-14 ">
       <div className="flex items-center flex-col px-5 mt-12">
         <h1 className="focus:outline-none text-xl md:text-3xl lg:text-4xl font-semibold text-left md:font-extrabold  leading-relaxed text-gray-800 capitalize pt-4">
-          Here it From our family!
+          Hear it From our family!
         </h1>
-        <p className="focus:outline-none capitalize text-sm text-left text-gray-600 md:max-w-xl mx-auto">
+        <p className="focus:outline-none capitalize text-sm text-left text-gray-600 md:max-w-3xl mx-auto">
           We never left hands of any of our clients years after years and
           hundreds of our clients still we are in contact with them and like
           this we grew as a community so that each member who is joining us have
@@ -71,10 +16,10 @@ const Textimonial = () => {
         </p>
       </div>
       <div className="overflow-x-auto snap-x  scrollbar-hide gap-3 flex p-5 mt-8">
-        {testimonials.map((test, index) => (
+        {data.testimonials.map((test, index) => (
           <div
             key={index}
-            className="snap-center max-w-xl  mx-auto rounded-lg bg-white dark:bg-gray-800 shadow shadow-indigo-500 px-5 pt-5 pb-10 text-gray-800 dark:text-gray-50"
+            className="snap-center max-w-xl  mx-auto rounded-lg bg-white shadow shadow-indigo-500 px-5 pt-5 pb-10 text-gray-800 "
           >
             <div className="w-72 text-center  -mt-12 bg-white rounded-full border-2 border-indigo-500 mx-auto">
               <span className="block relative">
@@ -89,9 +34,7 @@ const Textimonial = () => {
               <div className="text-3xl text-indigo-500 text-left leading-tight h-3">
                 “
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-100 text-center px-5">
-                {test.quote}
-              </p>
+              <p className="text-sm  text-center px-5">{test.quote}</p>
               <div className="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3">
                 ”
               </div>
@@ -100,11 +43,27 @@ const Textimonial = () => {
               <p className="text-md text-indigo-500 font-bold text-center">
                 {test.name}
               </p>
-              <p className="text-xs text-gray-500 dark:text-gray-300 text-center">
+              <p className="text-xs text-gray-500 text-center">
                 @{test.country}
               </p>
             </div>
           </div>
+        ))}
+      </div>
+      <div className="video-responsive flex flex-col md:flex-row gap-3 p-2">
+        {data.videoTesti.map((video, index) => (
+          <iframe
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            className="w-full h-60 sm:h-96"
+            src={`https://www.youtube.com/embed/${video.embedID}`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
         ))}
       </div>
     </div>

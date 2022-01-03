@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import CtaHead from "../components/CtaHeader";
 import Cta from "../components/Cta";
@@ -13,12 +13,20 @@ import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import Team from "../components/Team";
 import styled from "styled-components";
+import data from "../data";
+import Contactus from "../components/Contactus";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const WpBtn = styled.button`
     position: fixed;
@@ -47,10 +55,11 @@ export default function Home() {
         <Testimonial />
         <Services />
         <Team />
+        <Contactus />
         <Footer />
       </div>
       <WpBtn>
-        <Link href="https://wa.me/919082939164" passHref >
+        <Link href={`https://wa.me/${data.contact.whatsapp}`} passHref>
           <Image
             src={"/wp.svg"}
             width={40}
@@ -61,7 +70,7 @@ export default function Home() {
           />
         </Link>
         <div className="h-2"></div>
-        <Link href="tel:+919082939164" passHref >
+        <Link href={`tel:${data.contact.call}`} passHref>
           <Image
             src={"/tl.svg"}
             width={40}

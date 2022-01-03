@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { TiSocialLinkedin } from "react-icons/ti";
 import Link from "next/link";
-import { Link as sLink } from "react-scroll";
 import Image from "next/image";
 
 const Nav = styled.nav`
@@ -150,16 +149,22 @@ const Navbar = ({ toggle }) => {
 
           <NavMenu>
             <NavItems>
-              <NavLinks to="about">About</NavLinks>
+              <Link href="/#about">
+                <NavLinks to="about">About</NavLinks>
+              </Link>
             </NavItems>
             <NavItems>
-              <NavLinks to="services">Services</NavLinks>
+              <Link href="/#services">
+                <NavLinks to="services">Services</NavLinks>
+              </Link>
             </NavItems>
             <NavItems>
-              <NavLinks to="contact">Contact</NavLinks>
+              <Link href="/#contactus">
+                <NavLinks to="contact">Contact</NavLinks>
+              </Link>
             </NavItems>
           </NavMenu>
-          <SocialIcons onClick={toggle}>
+          <SocialIcons>
             <ClickIcons>
               <TiSocialLinkedin />
             </ClickIcons>

@@ -10,7 +10,7 @@ function CtaHead() {
                 <div className="w-full pb-6  flex-col md:block flex  items-center justify-center md:pt-0 pt-4 ">
                   <h1 className="capitalize text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:w-10/12 text-white font-black  md:text-left text-center ">
                     Never limit your opportunities. Just dream it, Aim it,
-                    conquer it
+                    together lets conquer it
                   </h1>
                   <button className="mt-5 capitalize lg:mt-12 py-3 lg:py-4 px-4  lg:px-6 bg-white font-bold text-indigo-700 rounded-lg text-sm lg:text-lg xl:text-xl hover:opacity-90">
                     Join the community
