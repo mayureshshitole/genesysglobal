@@ -149,17 +149,17 @@ const Navbar = ({ toggle }) => {
 
           <NavMenu>
             <NavItems>
-              <Link href="/#about">
+              <Link passHref href="/#about">
                 <NavLinks to="about">About</NavLinks>
               </Link>
             </NavItems>
             <NavItems>
-              <Link href="/#services">
+              <Link passHref href="/#services">
                 <NavLinks to="services">Services</NavLinks>
               </Link>
             </NavItems>
             <NavItems>
-              <Link href="/#contactus">
+              <Link passHref href="/#contactus">
                 <NavLinks to="contact">Contact</NavLinks>
               </Link>
             </NavItems>

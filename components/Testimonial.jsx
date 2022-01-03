@@ -53,6 +53,7 @@ const Textimonial = () => {
       <div className="video-responsive flex flex-col md:flex-row gap-3 p-2">
         {data.videoTesti.map((video, index) => (
           <iframe
+          key={index}
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"

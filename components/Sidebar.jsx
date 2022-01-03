@@ -97,17 +97,17 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icons>
       <SidebarWrapper>
         <SidebarMenu>
-          <Link href="/#about">
+          <Link passHref href="/#about">
             <SidebarLinks onClick={toggle} to="about">
               About
             </SidebarLinks>
           </Link>
-          <Link href="/#services">
+          <Link passHref href="/#services">
             <SidebarLinks onClick={toggle} to="services">
               Services
             </SidebarLinks>
           </Link>
-          <Link href="/#contactus">
+          <Link passHref href="/#contactus">
             <SidebarLinks onClick={toggle} to="contact">
               Contact
             </SidebarLinks>
