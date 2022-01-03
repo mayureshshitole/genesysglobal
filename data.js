@@ -143,7 +143,7 @@ export default {
       img: "/flag.svg",
     },
     {
-      title: "Working for everyone",
+      title: "Working for Everyone",
       desc: "We work for everyone who want to study abroad work abroiad or even anyone want to take their family with them we deals with all types of visas.",
       img: "/checked.svg",
     },
