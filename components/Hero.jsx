@@ -17,8 +17,8 @@ const Hero = () => {
             </h3>
             <h3 className="text-lg sm:text-xsl sm:font-semibold sm:px-5 text-white">
               <span className="text-indigo-700 font-bold sm:text-3xl">
-                "What do you want to do?"
-              </span>{" "}
+                What do you want to do?
+              </span>
               Is you need to answer, rest consider it done!
             </h3>
             <div

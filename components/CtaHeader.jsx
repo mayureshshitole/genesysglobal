@@ -20,10 +20,10 @@ function CtaHead() {
                   <div className="flex flex-col items-center justify-center">
                     <div className="flex items-center mt-8">
                       <div className=" rounded-full shadow-md shadow-indigo-700 animate-bounce">
-                        <img className="w-full h-full" src="/programming.svg" />
+                        <img alt="cta header vector image for genesysglobal.com" className="w-full h-full" src="/programming.svg" />
                       </div>
                       <div className=" rounded-full shadow-md shadow-indigo-700  animate-bounceFirst">
-                        <img className="w-full h-full" src="/interview.svg" />
+                        <img alt="cta header vector image for genesysglobal.com" className="w-full h-full" src="/interview.svg" />
                       </div>
                     </div>
                   </div>
