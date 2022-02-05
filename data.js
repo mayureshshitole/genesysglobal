@@ -1,8 +1,8 @@
 export default {
   contact: {
     email: "contact@genesysglobal.com",
-    whatsapp: "+919082939164",
-    call: "+919082939164",
+    whatsapp: "+918850526824",
+    call: "+918850526824",
     map: "https://www.google.co.in/maps/place/Gateway+Of+India+Mumbai/@18.9219841,72.8324656,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7d1c73a0d5cad:0xc70a25a7209c733c!8m2!3d18.9219841!4d72.8346543",
   },
 
@@ -29,7 +29,7 @@ export default {
     },
     {
       purpose: "Visit",
-      quote: "the world is your oyster! travel far and beyond",
+      quote: "The world is your oyster! travel far and beyond",
       image:
         "https://images.unsplash.com/photo-1602131137569-c4bf5187cb8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
@@ -114,22 +114,22 @@ export default {
   services: [
     {
       title: "Education",
-      desc: "Study in worlds renowned universities. Multiple countries option with both Bacherlors and Masters Courses",
+      desc: "Cutting edge 1:1 Counseling for Studies Abroad Selection of Universities and Programs, Pre-Application processs,admission formalities, Preperation of documents, Coaching for high competitive tests, Availing scholarship, Acquing financial aid, Visa counseling, Interview preparation, Pre-departure counseling, travel arrangement, LORs, SOPs",
     },
     {
-      title: "Service",
-      desc: "Wrok abroad with PR supported in multiple countries. Support for both job search and PR.",
+      title: "Complex and Denied Cases",
+      desc: "Visa Declined? Unlawful in reasons? Struggling with PR and Work Permits? We are here to help you and main thing is that we are specilized in handling rejected cases!",
     },
     {
-      title: "Family Imigration",
-      desc: "Take your family with you if you have PR of any country we support all kind of relations migration.",
+      title: "Migration Services",
+      desc: "Work permits, Permanent residence, Family sponsorship, Investor Visas, Extension of Status, Interview Preperations for all kind of formats, IELTS- General Preparation",
     },
   ],
 
   fourAbout: [
     {
       title: "Documentation",
-      desc: "We takes care of your documentation. We make sure that each and every document is proper for visa purposes.",
+      desc: "We takes care of your documentation. We make sure that each and every document is processed through our stringent QAQC procedure.",
       img: "/documents.svg",
     },
     {
@@ -144,7 +144,7 @@ export default {
     },
     {
       title: "Working for Everyone",
-      desc: "We work for everyone who want to study abroad work abroiad or even anyone want to take their family with them we deals with all types of visas.",
+      desc: "We work for everyone who want to study abroad work abroad or even anyone want to take their family with them we provide serveces for Students/Work Permit/Permanent Residence and many more. We are specialized in declined cases for all the countries.",
       img: "/checked.svg",
     },
   ],
