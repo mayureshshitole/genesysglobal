@@ -90,13 +90,14 @@ const Hero = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
                 key={index}
-                className="rounded-lg bg-white  shadow shadow-indigo-500 px-5  py-5 text-gray-800 "
+                className="rounded-lg bg-white w-96  shadow shadow-indigo-500 px-5  py-5 text-gray-800 "
               >
                 <div className="object-contain ">
                   <img
                     src={purp.image}
                     alt="background image"
-                    className="object-cover w-full rounded-lg"
+                    className="object-cover w-full h-52 rounded-lg"
+                    
                   />
                 </div>
                 <div className="w-full">
