@@ -26,7 +26,7 @@ const AboutUs = () => {
                 tabIndex={0}
                 className="focus:outline-none text-xl md:text-3xl lg:text-4xl font-semibold text-left md:font-extrabold  leading-relaxed text-gray-800 capitalize pt-4"
               >
-                The bunch of knowledged and skilled Consultants on mission to
+                The bunch of knowledged and skilled Career and Immigration Consultants on mission to
                 provide Overseas consultancy with most transparent and
                 affordable format
               </h1>
